@@ -1,0 +1,56 @@
+// .poster-text-box {
+//   position: absolute;
+//   top: 89%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+// }
+
+.poster-text-1 {
+  margin-top: -10rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 9rem;
+  color: $color-primary;
+  position: relative;
+  transform: translate(-50% -50%);
+  color: transparent;
+  -webkit-text-stroke: 3px $color-secondary;
+
+  @include respond(big-laptop) {
+    font-size: 12rem;
+    margin-top: -8rem;
+  }
+  @include respond(tab-landscape) {
+    font-size: 7rem;
+  }
+  @include respond(tab-portrait) {
+    font-size: 6rem;
+  }
+  @include respond(phone) {
+    font-size: 5rem;
+  }
+  @include respond(phone-large) {
+    font-size: 4rem;
+  }
+}
+
+.poster-text-1::before {
+  content: "LETS SEE YOUR VISION";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  overflow: hidden;
+  color: $color-secondary;
+  border-right: 7px solid $color-secondary;
+  transition: 2s ease-in-out;
+}
+.poster-text-1:hover::before {
+  width: 90%;
+  @include respond(big-laptop) {
+    width: 100%;
+  }
+
+  @include respond(phone) {
+    width: 65%;
+  }
+}

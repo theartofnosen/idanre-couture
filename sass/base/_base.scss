@@ -1,0 +1,42 @@
+@font-face {
+  font-family: myFont;
+  src: url(/fonts/Parabole.ttf);
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  box-sizing: inherit;
+}
+html {
+  font-size: 62.5%;
+  font-family: myFont;
+
+  @include respond(big-laptop) {
+    font-size: 75%;
+  }
+  @include respond(tab-landscape) {
+    font-size: 56.25%;
+  }
+  @include respond(tab-portrait) {
+    font-size: 50%;
+  }
+  @include respond(phone) {
+    font-size: 40%;
+  }
+}
+
+body {
+  padding: 2rem;
+  box-sizing: border-box;
+  background-color: $color-tertiary-dark;
+}
+nav {
+  position: fixed;
+  z-index: 5000;
+
+  @include respond(phone) {
+    position: absolute;
+  }
+}

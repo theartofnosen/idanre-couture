@@ -1,0 +1,90 @@
+.header {
+  position: relative;
+  height: 95vh;
+  background-image: url(/img/header.img.webp);
+  background-size: fit;
+  background-repeat: no-repeat;
+  background-position-x: 56%;
+  background-position-y: 120%;
+
+  @include respond(big-laptop) {
+    background-size: contain;
+    background-position-y: 100%;
+  }
+
+  @include respond(tab-landscape) {
+    background-size: 60rem;
+    background-position-y: 90%;
+  }
+  @include respond(tab-portrait) {
+    background-size: 50rem;
+    background-position-x: 60%;
+    background-position-y: 92%;
+  }
+  @include respond(phone) {
+    background-size: 40rem;
+    background-position-x: 30%;
+    background-position-y: 120%;
+  }
+}
+.text-box {
+  position: absolute;
+  top: 78%;
+  left: 18%;
+  transform: translate(-50%, -50%);
+
+  @include respond(big-laptop) {
+    top: 60%;
+  }
+  @include respond(tab-landscape) {
+    top: 64%;
+  }
+  @include respond(tab-portrait) {
+    top: 30%;
+    left: 60%;
+  }
+  @include respond(phone) {
+    top: 75%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+  }
+  @include respond(phone-large) {
+    top: 30%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+  }
+
+  @include respond(phone-medium) {
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.logo-box {
+  position: absolute;
+  top: 0;
+  left: 330px;
+
+  @include respond(tab-portrait) {
+    left: 340px;
+  }
+  @include respond(phone) {
+    display: none;
+  }
+}
+
+.logo {
+  height: 55px;
+  position: sticky;
+
+  @include respond(tab-landscape) {
+    height: 40px;
+  }
+  @include respond(tab-portrait) {
+    height: 43px;
+  }
+  @include respond(phone) {
+    display: none;
+  }
+}

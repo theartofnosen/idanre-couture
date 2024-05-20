@@ -1,0 +1,134 @@
+.row {
+  width: $grid-width;
+  margin: 0 auto;
+
+  &:not(:last-child) {
+    margin-bottom: $gutter-vertical;
+  }
+
+  @include clearfix;
+
+  [class^="col-"] {
+    color: $color-primary-dark;
+    float: left;
+
+    &:not(:last-child) {
+      margin-right: $gutter-horizontal;
+    }
+  }
+
+  .col-1-of-2 {
+    width: calc((100% - #{$gutter-horizontal}) / 2);
+  }
+
+  .col-1-of-3 {
+    margin-top: 0.2rem;
+    font-family: sans-serif;
+    font-size: 1.4rem;
+    width: calc((100% - 2 * #{$gutter-horizontal}) / 3);
+
+    @include respond(phone) {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+  }
+  .col-1-of-4 {
+    width: calc((100% - 3 * #{$gutter-horizontal}) / 4);
+  }
+  .col-1-of-5 {
+    width: calc((100% - 4 * #{$gutter-horizontal}) / 5);
+  }
+  .col-1-of-3 {
+    margin-top: 0.2rem;
+    font-family: sans-serif;
+    font-size: 1.4rem;
+    width: calc((100% - 2 * #{$gutter-horizontal}) / 3);
+
+    @include respond(tab-landscape) {
+      font-size: 1.6rem;
+      margin-top: 2rem;
+      width: calc((100% - 2 * #{$gutter-horizontal}) / 2);
+    }
+    @include respond(tab-portrait) {
+      font-size: 1.6rem;
+      margin-top: 2rem;
+      width: calc((100% - 2 * #{$gutter-horizontal}) / 2);
+    }
+
+    @include respond(phone) {
+      font-size: 1.2rem;
+      margin-top: 2rem;
+      width: calc((100% - 2 * #{10rem}) / 2);
+    }
+  }
+  .col-2-of-3 {
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    font-weight: 100;
+    width: calc(
+      2 * ((100% - 2 * #{$gutter-horizontal}) / 3) + #{$gutter-horizontal}
+    );
+
+    @include respond(big-laptop) {
+      font-size: 1.8rem;
+    }
+    @include respond(tab-portrait) {
+      font-weight: 300;
+    }
+    @include respond(tab-portrait) {
+      font-weight: 300;
+    }
+
+    @include respond(phone) {
+      font-size: 2.5rem;
+      word-spacing: 0.5rem;
+    }
+
+    @include respond(phone-large) {
+      font-size: 2rem;
+      word-spacing: 0;
+      width: 250px;
+    }
+  }
+}
+.scroll-text {
+  color: $color-primary-dark;
+  font-size: 8rem;
+  font-weight: 200;
+  float: left;
+  height: 200px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+  line-height: 1.2;
+
+  @include respond(big-laptop) {
+    font-size: 9rem;
+  }
+  @include respond(tab-portrait) {
+    font-size: 7rem;
+  }
+  @include respond(phone) {
+    font-size: 6rem;
+  }
+  @include respond(phone-large) {
+    font-size: 4rem;
+  }
+}
+.grid {
+  display: grid;
+  gap: 9.6rem;
+
+  @include respond(phone) {
+    display: inline-block;
+  }
+}
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}

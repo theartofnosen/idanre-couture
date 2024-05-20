@@ -1,0 +1,94 @@
+@font-face {
+  font-family: myFont;
+  src: url(/fonts/Parabole.ttf); }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  font-family: myFont; }
+
+body {
+  padding: 2rem;
+  box-sizing: border-box;
+  background-color: #312219; }
+
+.header {
+  position: relative;
+  height: 95vh;
+  background-image: url(../img/926eb355e374fa9c16404ae5aa9a2abd-removebg-preview.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 57% 50%; }
+
+.bg-video {
+  position: absolute;
+  z-index: -1;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+  .bg-video__content {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
+
+.text-box {
+  position: absolute;
+  top: 80%;
+  left: 18%;
+  transform: translate(-50%, -50%); }
+
+.heading-primary {
+  color: #e2dbda;
+  backface-visibility: hidden; }
+
+.heading-primary-main {
+  display: block;
+  font-weight: 100;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-bottom: 2rem; }
+
+.heading-primary-sub-1 {
+  display: block;
+  font-size: 9.5rem;
+  font-weight: 500;
+  animation-name: moveInLeft;
+  animation-duration: 9s;
+  animation-delay: 1s;
+  animation-timing-function: ease-out; }
+
+.heading-primary-sub-2 {
+  color: #b9adac;
+  letter-spacing: 0.5rem;
+  font-size: 1.2rem;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin-right: 20px; }
+
+.logo-box {
+  position: absolute;
+  top: 0;
+  left: 330px; }
+
+.logo {
+  height: 60px; }
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px); }
+  50% {
+    transform: translateX(10px); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
