@@ -120,7 +120,7 @@ nav {
     @media (max-width: 23em) {
       .heading-primary-sub-2 {
         font-size: 1.4rem;
-        margin-top: 79rem; } }
+        margin-top: 60rem; } }
 
 .heading-secondary {
   display: inline-block;
@@ -448,7 +448,7 @@ nav {
       top: 20%; } }
   @media (max-width: 23em) {
     .footer-txt {
-      font-size: 18rem;
+      font-size: 12rem;
       top: 20%; } }
 
 .footer-word {
@@ -594,6 +594,9 @@ nav {
   @media (max-width: 31.25em) {
     .scroll-text {
       font-size: 4rem; } }
+  @media (max-width: 31.25em) {
+    .scroll-text {
+      font-size: 3.4rem; } }
 
 .grid {
   display: grid;
@@ -706,7 +709,7 @@ nav {
   overflow-x: hidden; }
   @media (max-width: 23em) {
     .section-about {
-      width: 340px; } }
+      width: 300px; } }
 
 .section-stories {
   padding: 20rem 0; }

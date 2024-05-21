@@ -115,6 +115,9 @@
   @include respond(phone-large) {
     font-size: 4rem;
   }
+  @include respond(phone-large) {
+    font-size: 3.4rem;
+  }
 }
 .grid {
   display: grid;
