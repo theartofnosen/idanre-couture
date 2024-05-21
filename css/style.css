@@ -345,9 +345,6 @@ nav {
     @media (max-width: 37.5em) {
       .slide__img-box {
         padding-right: 12rem; } }
-    @media (max-width: 23em) {
-      .slide__img-box {
-        padding-right: 0; } }
   .slide__img-box-1 {
     display: flex;
     padding-right: 15rem;

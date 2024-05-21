@@ -21,9 +21,6 @@
     @include respond(phone) {
       padding-right: 12rem;
     }
-    @include respond(phone-small) {
-      padding-right: 0;
-    }
   }
 
   &__img-box-1 {
