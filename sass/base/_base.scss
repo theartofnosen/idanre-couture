@@ -34,7 +34,7 @@ body {
 }
 nav {
   position: fixed;
-  z-index: 5000;
+  z-index: 999;
 
   @include respond(phone) {
     position: absolute;

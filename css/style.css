@@ -31,7 +31,7 @@ body {
 
 nav {
   position: fixed;
-  z-index: 5000; }
+  z-index: 999; }
   @media (max-width: 37.5em) {
     nav {
       position: absolute; } }
@@ -261,7 +261,7 @@ nav {
       width: 100%; } }
   @media (max-width: 37.5em) {
     .poster-text-1:hover::before {
-      width: 65%; } }
+      width: 90%; } }
 
 .stories {
   float: right;
