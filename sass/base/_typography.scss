@@ -62,14 +62,7 @@
     float: right;
 
     @include respond(phone) {
-      font-size: 2rem;
-    }
-    @include respond(phone-large) {
-      font-size: 1.4rem;
-    }
-    @include respond(phone-small) {
-      font-size: 1.4rem;
-      margin-top: 60rem;
+      display: none;
     }
   }
 }

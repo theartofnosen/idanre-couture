@@ -113,14 +113,7 @@ nav {
     float: right; }
     @media (max-width: 37.5em) {
       .heading-primary-sub-2 {
-        font-size: 2rem; } }
-    @media (max-width: 31.25em) {
-      .heading-primary-sub-2 {
-        font-size: 1.4rem; } }
-    @media (max-width: 23em) {
-      .heading-primary-sub-2 {
-        font-size: 1.4rem;
-        margin-top: 60rem; } }
+        display: none; } }
 
 .heading-secondary {
   display: inline-block;
