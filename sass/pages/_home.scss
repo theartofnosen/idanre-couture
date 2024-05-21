@@ -1,6 +1,10 @@
 .section-about {
   padding: 9rem 0;
   overflow-x: hidden;
+
+  @include respond(phone-small) {
+    width: 340px;
+  }
 }
 .section-stories {
   padding: 20rem 0;

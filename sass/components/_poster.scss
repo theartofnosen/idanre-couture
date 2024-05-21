@@ -53,4 +53,7 @@
   @include respond(phone) {
     width: 90%;
   }
+  @include respond(phone-small) {
+    width: 100%;
+  }
 }

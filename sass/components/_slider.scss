@@ -21,6 +21,9 @@
     @include respond(phone) {
       padding-right: 12rem;
     }
+    @include respond(phone-small) {
+      padding-right: 0;
+    }
   }
 
   &__img-box-1 {
@@ -46,15 +49,13 @@
       0 20%,
       18% 0
     );
-
+    border: 6px solid $color-primary-dark;
     @include respond(big-laptop) {
       width: 250px;
     }
     @include respond(phone) {
       width: 150px;
     }
-
-    border: 6px solid $color-primary-dark;
   }
 
   // &__txt {
@@ -124,6 +125,5 @@
 }
 
 .btn-1 {
-  margin-right: 3rem;
   float: right;
 }

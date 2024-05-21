@@ -7,7 +7,8 @@
 }
 
 //MEDIA QUERY MANAGER
-//  0-400px
+//
+//  500px           PHONE LARGE
 //  0 - 600px       PHONE
 //  600 - 900px     TABLET PORTRAIT
 //  900 - 1200px    TABLET LANDSCAPE
@@ -28,11 +29,6 @@
 @mixin respond($breakpoint) {
   @if $breakpoint == phone-small {
     @media (max-width: 23em) {
-      @content;
-    }
-  }
-  @if $breakpoint == phone-medium {
-    @media (max-width: 31.25em) {
       @content;
     }
   }

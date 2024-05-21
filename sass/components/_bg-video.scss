@@ -51,7 +51,7 @@
     width: 37%;
   }
   @include respond(phone) {
-    width: 60%;
+    width: 100%;
     margin-left: 0;
   }
 
