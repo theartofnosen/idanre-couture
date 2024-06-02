@@ -7,13 +7,13 @@
 }
 
 //MEDIA QUERY MANAGER
-//
-//  500px           PHONE LARGE
-//  0 - 600px       PHONE
-//  600 - 900px     TABLET PORTRAIT
-//  900 - 1200px    TABLET LANDSCAPE
-//  1200 - 1800px   IS WHERE OUR NORMAL STYLES APPLY
-//  1800px - z      BIG LAPTOP
+//  0   -   400px     PHONE SMALL
+//  400 -   500px     PHONE MEDIUM
+//  500 -   600px     PHONE
+//  600 -   900px     TABLET PORTRAIT
+//  900 -   1200px    TABLET LANDSCAPE
+//  1200 -  1800px    IS WHERE OUR NORMAL STYLES APPLY
+//  1800 - z        BIG LAPTOP
 
 // $breakpoint ARGUMENT CHOICES:
 
@@ -33,7 +33,7 @@
     }
   }
 
-  @if $breakpoint == phone-large {
+  @if $breakpoint == phone-medium {
     @media (max-width: 31.25em) {
       @content;
     }

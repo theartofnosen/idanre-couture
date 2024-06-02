@@ -430,15 +430,15 @@ nav {
       font-size: 36rem; } }
   @media (max-width: 37.5em) {
     .footer-txt {
-      font-size: 32rem;
+      font-size: 30rem;
       top: 25%; } }
   @media (max-width: 31.25em) {
     .footer-txt {
-      font-size: 28rem;
+      font-size: 20rem;
       top: 20%; } }
   @media (max-width: 23em) {
     .footer-txt {
-      font-size: 12rem;
+      font-size: 10rem;
       top: 20%; } }
 
 .footer-word {
@@ -584,7 +584,7 @@ nav {
   @media (max-width: 31.25em) {
     .scroll-text {
       font-size: 4rem; } }
-  @media (max-width: 31.25em) {
+  @media (max-width: 23em) {
     .scroll-text {
       font-size: 3.4rem; } }
 

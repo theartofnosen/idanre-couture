@@ -81,7 +81,7 @@
       word-spacing: 0.5rem;
     }
 
-    @include respond(phone-large) {
+    @include respond(phone-medium) {
       font-size: 2rem;
       word-spacing: 0;
       width: 250px;
@@ -112,10 +112,10 @@
   @include respond(phone) {
     font-size: 6rem;
   }
-  @include respond(phone-large) {
+  @include respond(phone-medium) {
     font-size: 4rem;
   }
-  @include respond(phone-large) {
+  @include respond(phone-small) {
     font-size: 3.4rem;
   }
 }

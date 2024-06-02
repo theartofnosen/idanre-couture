@@ -20,15 +20,15 @@
       font-size: 36rem;
     }
     @include respond(phone) {
-      font-size: 32rem;
+      font-size: 30rem;
       top: 25%;
     }
-    @include respond(phone-large) {
-      font-size: 28rem;
+    @include respond(phone-medium) {
+      font-size: 20rem;
       top: 20%;
     }
     @include respond(phone-small) {
-      font-size: 12rem;
+      font-size: 10rem;
       top: 20%;
     }
   }
